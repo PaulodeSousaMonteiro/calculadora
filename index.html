@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/styles/styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Caluladora</h1>
+        <section id="calc">
+            <div id="ope">
+            
+            </div>
+            <div id="buttons">
+                <!--Primeira Linha-->
+                <input type="button" value="C" class="button" id="c" onclick="clearAll()">
+                <button class="button" onclick="backspace()">
+                    <i class="fa-solid fa-delete-left"></i>
+                </button>
+                <button class="button" onclick="add('/')">
+                    <i class="fa-solid fa-divide"></i>
+                </button>
+
+                <!--Segunda linha-->
+                <input type="button" value="1" class="button" onclick="add(1)">
+                <input type="button" value="2" class="button" onclick="add(2)">
+                <input type="button" value="3" class="button" onclick="add(3)">
+                <input type="button" value="X" class="button" onclick="add('*')"> 
+
+                <!--Terceira linha-->
+                <input type="button" value="4" class="button" onclick="add(4)">
+                <input type="button" value="5" class="button" onclick="add(5)">
+                <input type="button" value="6" class="button" onclick="add(6)">
+                <input type="button" value="-" class="button" onclick="add('-')">
+
+                <!--Quarta linha-->
+                <input type="button" value="7" class="button" onclick="add(7)">
+                <input type="button" value="8" class="button" onclick="add(8)">
+                <input type="button" value="9" class="button" onclick="add(9)">
+                <input type="button" value="+" class="button" onclick="add('+')">
+
+                <!--Ultima linha-->
+                <input type="button" value="." class="button" onclick="add('.')">
+                <input type="button" value="0" class="button" onclick="add(0)">
+                <input type="button" value="=" class="button" id="result" onclick="calcular()">
+            </div>
+        </section>
+    </div>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
